@@ -10,6 +10,7 @@ import Donate from './pages/Donate';
 import Volunteer from './pages/Volunteer';
 import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/volunteer" element={<Volunteer />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />
