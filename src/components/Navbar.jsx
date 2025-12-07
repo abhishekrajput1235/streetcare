@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Heart, Phone, Mail } from 'lucide-react';
+import GoogleTranslate from './GoogleTranslate';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,7 @@ const Navbar = () => {
                         <span className="flex items-center gap-2"><Mail size={16} /> info@streetwelfare.org</span>
                     </div>
                     <div className="flex items-center space-x-4">
+                        <GoogleTranslate />
                         <Link to="/volunteer" className="hover:text-gray-200 transition">Volunteer</Link>
                         <Link to="/donate" className="hover:text-gray-200 transition">Donate</Link>
                     </div>
@@ -83,13 +85,16 @@ const Navbar = () => {
                                 to={link.path}
                                 onClick={() => setIsOpen(false)}
                                 className={`block py-3 px-4 rounded-lg ${isActive(link.path)
-                                        ? 'bg-orange-50 text-primary font-semibold'
-                                        : 'text-gray-600 hover:bg-gray-50'
+                                    ? 'bg-orange-50 text-primary font-semibold'
+                                    : 'text-gray-600 hover:bg-gray-50'
                                     }`}
                             >
                                 {link.name}
                             </Link>
                         ))}
+                        <div className="px-4">
+                            <GoogleTranslate />
+                        </div>
                         <Link
                             to="/donate"
                             onClick={() => setIsOpen(false)}

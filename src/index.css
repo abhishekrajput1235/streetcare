@@ -5,3 +5,51 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Google Translate Styling */
+.goog-te-gadget {
+  font-family: inherit !important;
+  font-size: 0 !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  padding: 4px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #374151;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.goog-te-gadget .goog-te-combo:hover {
+  border-color: #e67e22;
+}
+
+/* Hide Google Translate Top Bar */
+body {
+  top: 0 !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.skiptranslate {
+  display: none !important;
+}
+
+.google-translate-container .skiptranslate {
+  display: block !important;
+}
+
+/* Fix for mobile menu */
+iframe.goog-te-banner-frame {
+  display: none !important;
+}

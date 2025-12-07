@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import { CheckCircle } from 'lucide-react';
+import cow2 from '../assets/cow2.jpg';
 
 const Programs = () => {
     const programs = [
@@ -24,7 +25,7 @@ const Programs = () => {
                 "Green fodder cultivation.",
                 "Protection from illegal slaughter."
             ],
-            img: "https://images.unsplash.com/photo-1545468860-71b951c5a65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            img: cow2
         },
         {
             title: "Medical Emergency Response",
